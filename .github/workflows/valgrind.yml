@@ -19,5 +19,5 @@ jobs:
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make test
       run: |
-        make test -C CPP_Miniproject-master/
-        valgrind ./CPP_MiniProject-master/all.out
+        g++ Karaoke_Rest.cpp -lpthread -o CPP_Miniproject-master/all.out
+        valgrind ./CPP_Miniproject-master/all.out
